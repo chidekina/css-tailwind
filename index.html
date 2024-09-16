@@ -4,46 +4,349 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS - Tailwind</title>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind.config.js"></script>
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
-<body class="bg-slate-100">
+<body class="">
 
-    <header class="bg-white p-100 pt-[34px]">
-        <div class="flex gap-[30px]">
-            <h1 class="logo">Digital Store</h1>
-            <div class="search flex-1">
-                <input type="text" placeholder="Pesquisar Produto" id="" />
-                <box-icon name="search"></box-icon>
+    <header class="bg-white p-100 pt-[34px] h-[192px] w-full">
+        <div class=" ml-[65px] flex gap-[30px] justify-center items-center mb-[40px] w-full">
+            <div class="flex gap-[5px] ml-[-100px]">
+                <img src="imgs/Digital.svg" alt="Digital Logo">
+                <h1 class="logo font-semibold text-digital text-[36px]">Digital Store</h1>
             </div>
-            <div class="flex gap-[30px]">
-                <a href="">Cadastre-se</a>
-                <a href="">Entrar</a>
+            <input type="text" name="search" placeholder="Pesquisar produto..."
+                class="placeholder: pl-[24px] bg-[url('/imgs/Search.svg')] bg-no-repeat bg-[center_right_18px] bg-pattern-grey w-[560px] h-[60px] rounded-xl">
+            <div class="flex gap-[30px] items-center">
+                <a href="" class="underline underline-offset-2 text-dark-grey2">Cadastre-se</a>
+                <a href=""
+                    class="flex flex-col justify-center text-center h-[40px] bg-digital rounded-lg mr-[70px] py-auto w-[114px] text-white font-bold text-[14px]">Entrar</a>
                 <div class="cart">
-                    <box-icon name="cart"></box-icon>
+                    <a href=""><img src="imgs/Buy.svg" alt="Cart icon"></a>
                 </div>
             </div>
         </div>
         <nav>
-            <ul class="flex">
+            <ul class="flex gap-[32px] text-[16px]">
                 <li>
-                    <a href="">Home</a>
+                    <h5 class="font-bold text-digital underline underline-offset-8">Home</h5>
                 </li>
                 <li>
-                    <a href="">Produtos</a>
+                    <a href=""
+                        class="selcted hover:text-digital hover:font-bold">Produtos</a>
                 </li>
                 <li>
-                    <a href="">Categorias</a>
+                    <a href="" class="hover:text-digital hover:font-bold">Categorias</a>
                 </li>
                 <li>
-                    <a href="">Meus Pedidos</a>
+                    <a href="" class="hover:text-digital hover:font-bold">Meus Pedidos</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main class="bg-secondary">
+        <div class="bg-pattern-grey flex align-middle h-[680px]">
+            <div class="flex flex-col align-middle justify-start ml-[100px] w-[60%] gap-[20px]">
+                <h4 class="mt-[124px] text-warning font-bold text-[16px]">
+                    Melhores ofertas personalizadas
+                </h4>
+                <h1 class="leading-tight font-extrabold text-[64px]">
+                    Queima de estoque Nike 🔥
+                </h1>
+                <h6>
+                    Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
+                </h6>
+                <button
+                    class="mt-[40px] border-solid border-2 bg-digital w-[220px] h-[48px]  rounded-lg text-center text-white inline-block font-bold text-[16px]">
+                    Ver Ofertas
+                </button>
+            </div>
+            <div>
+                <img src="imgs/White-Sneak.svg" alt="White Sneak">
+            </div>
+            <div class="mt-[78px] mr-[36px]"><img src="imgs/Ornament.svg" alt=""></div>
+        </div>
+        <div class="ml-[100px] mt-[38px] mb-[100px] mr-[100px]">
+            <h2 class="font-bold text-[38px] mb-[20px]">Coleções em destaque</h2>
+            <ul class="flex gap-[12px]">
+                <li
+                    class="collection bg-emphasis bg-no-repeat bg-right bg-[url('/imgs/Supreme-shirt-star-wars.svg')] w-[450px] h-[250px] py-[35px] px-[30px]">
+                    <span class="bg-off w-[96px] h-[32px] py-[5px] px-[15px] rounded-xl font-bold text-[14px]">
+                        30% OFF</span>
+                    <h1 class="font-bold text-[32px] mt-[10px] mb-[20px] w-[50%] leading-tight">
+                        Novo drop Supreme</h1>
+                    <button class="w-[153px] h-[48px] text-digital font-bold bg-white rounded-lg">Comprar</button>
+                </li>
+                <li
+                    class="collection bg-emphasis bg-no-repeat bg-right-bottom bg-[url('/imgs/Sneak-black-white.svg')] w-[450px] h-[250px] py-[35px] px-[30px]">
+                    <span class="bg-off w-[96px] h-[32px] py-[5px] px-[15px] rounded-xl font-bold text-[14px]">
+                        30% OFF</span>
+                    <h1 class="font-bold text-[32px] mt-[10px] mb-[20px] w-[50%] leading-tight">
+                        Coleção Adidas</h1>
+                    <button class="w-[153px] h-[48px] text-digital font-bold bg-white rounded-lg">Comprar</button>
+                </li>
+                <li
+                    class="collection bg-emphasis bg-no-repeat bg-right-bottom bg-[url('/imgs/Beat-Bass.svg')] w-[450px] h-[250px] py-[35px] px-[30px]">
+                    <span class="bg-off w-[96px] h-[32px] py-[5px] px-[15px] rounded-xl font-bold text-[14px]">
+                        30% OFF</span>
+                    <h1 class="font-bold text-[32px] mt-[10px] mb-[20px] w-[50%] leading-tight">
+                        Novo Beat Bass</h1>
+                    <button class="w-[153px] h-[48px] text-digital font-bold bg-white rounded-lg">Comprar</button>
+                </li>
+            </ul>
+        </div>
+        <div
+            class="flex gap-[20px] justify-center text-[24px] font-bold flex-col text-center h-[318px] mt-[10px] mb-[20px]">
+            <h1 class="mb-[20px]">Categorias</h1>
+            <ul class="flex justify-center gap-[50px]">
+                <li class="flex flex-col gap-[12px]">
+                    <div class="w-[104px] h-[104px] bg-white rounded-full flex p-[20px]">
+                        <img class="t-shirt" src="imgs/tshirt-_1_.svg" alt="T-shirt">
+                    </div>
+                    <h2 class="text-dark-grey2 text-[14px]">Camisetas</h2>
+                </li>
+                <li class="flex flex-col gap-[12px]">
+                    <div class="w-[104px] h-[104px] bg-white rounded-full flex p-[20px]">
+                        <img class="jeans" src="imgs/Jeans.svg" alt="Jeans">
+                    </div>
+                    <h2 class="text-dark-grey2 text-[14px]">Calças</h2>
+                </li>
+                <li class="flex flex-col gap-[12px]">
+                    <div class="w-[104px] h-[104px] bg-white rounded-full flex p-[20px]">
+                        <img class="cap" src="imgs/Jeans.svg" alt="Jeans">
+                    </div>
+                    <h2 class="text-dark-grey2 text-[14px]">Bonés</h2>
+                </li>
+                <li class="flex flex-col gap-[12px]">
+                    <div class="w-[104px] h-[104px] bg-white rounded-full flex p-[20px]">
+                        <img class="headphone" src="imgs/headphones.svg" alt="Headphones">
+                    </div>
+                    <h2 class="text-dark-grey2 text-[14px]">Headphones</h2>
+                </li>
+                <li class="flex flex-col gap-[12px]">
+                    <div class="w-[104px] h-[104px] bg-white rounded-full flex p-[20px]">
+                        <img class="sneak" src="imgs/sneaks.svg" alt="Sneaks">
+                    </div>
+                    <h2 class="text-dark-grey2 text-[14px]">Tênis</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="ml-[100px] flex justify-between">
+            <h1 class="font-bold text-[24px] text-dark-grey2">
+                Produtos em alta
+            </h1>
+            <span class="mr-[100px]">
+                <a href="" class="flex gap-[10px] text-digital">Ver todos <img src="imgs/Line.svg" alt="arrow to right"
+                        class="w-[24px]"></a>
+            </span>
+        </div>
+        <ul class="flex gap-[24px] flex-wrap mt-[20px] ml-[100px] h-[1038px]">
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <span class="block">
+                        <h4
+                            class="font-bold text-[14px] text-center w-[96px] h-[32px] rounded-full bg-off relative  px-[15px] py-[5px]">
+                            <span class="relative">30% OFF</span></h4>
+                    </span><img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <span class="block">
+                        <h4
+                            class="font-bold text-[14px] text-center w-[96px] h-[32px] rounded-full bg-off relative  px-[15px] py-[5px]">
+                            <span class="relative">30% OFF</span></h4>
+                    </span><img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+            <li class="w-[292px] h-[440px] flex flex-col"><span
+                    class="w-[292px] h-[320px] bg-white bg-no-repeat p-[20px]">
+                    <img src="/imgs/Sneaks-on-sale.svg" alt="Sneak Picture" class="w-[252px]">
+                </span>
+                <a class="mt-[18px] gap-[4px]">
+                    <h5 class=" text-[12px] font-bold text-ligh-grey">Tênis</h5>
+                    <h2 class="text-[24px]">K-Swiss V8 - Masculino</h2>
+                    <a class="flex gap-[8px] text-[24px]">
+                        <h4 class="text-ligh-grey line-through">$200</h4>
+                        <h4 class="font-bold">$100</h4>
+                    </a>
+                </a>
+            </li>
+        </ul>
+        <div class="px-[50px] bg-white h-[550px] flex gap-[65px] ">
+            <div class="w-[575px] h-[466px] mt-[85px]">
+                <a
+                    class=" relative flex w-[572px] items-center justify-center   from-gradient/50 to-white/0 before: bg-gradient-to-b before: absolute before: h-[440px] before: w-[440px] before: rounded-full"><img
+                        src="imgs/Air-Jordan.svg" alt="Air Jordan" class="w-[575px] z-10">
+                </a>
+            </div>
+            <div class="mt-[105px] flex flex-col gap-[20px]">
+                <h4 class="text-[14px] font-bold text-digital">Oferta especial</h4>
+                <h1 class="text-[48px] font-bold w-[514px] text-dark-grey2">Air Jordan edição de colecionador</h1>
+                <h2 class="w-[590px] text-dark-grey2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip</h2>
+                <button
+                    class="bg-digital w-[200px] h-[40px] rounded-lg text-white text-pattern-grey text-[14px] font-bold">Ver
+                    Oferta</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark-grey h-[454px] text-white">
+        <div class=" pl-[50px] pr-[100px] pt-[72px] flex">
+            <div class="flex gap-[40px] flex-col mr-[205px]">
+                <div class="flex gap-[5px]"><img src="/imgs/Digital-white.svg" alt="Digital Store Logo White">
+                    <h2 class="font-semibold text-[36px]">Digital Store</h2>
+                </div>
+                <div>
+                    <h4 class="w-[308px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore.</h4>
+                </div>
+                <nav class="flex gap-[36px]">
+                    <a href=""><img src="/imgs/facebook.svg" alt="Facebook logo"></a>
+                    <a href=""><img src="/imgs/instagram.svg" alt="Instagram logo"></a>
+                    <a href=""><img src="/imgs/twitter.svg" alt="Twitter logo"></a>
+                </nav>
+            </div>
+            <div class="flex gap-[100px]">
+                <ul class="flex flex-col gap-[12px]">
+                    <h4 class="font-semibold text-[18px] mb-[28px] w-[135px]">Informação</h4>
+                    <li><a href="">Sobre Drip Store</a></li>
+                    <li><a href="">Segurança</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href=""></a>Blog</li>
+                    <li><a href=""></a>Trabalhe conosco</li>
+                    <li><a href=""></a>Meus Pedidos</li>
+                </ul>
+                <ul class="flex flex-col gap-[12px]">
+                    <h4 class="font-semibold text-[18px] mb-[28px] w-[135px]">Categorias</h4>
+                    <li><a href="">Camisetas</a></li>
+                    <li><a href="">Calças</a></li>
+                    <li><a href="">Bonés</a></li>
+                    <li><a href=""></a>Headphones</li>
+                    <li><a href=""></a>Tênis</li>
+                </ul>
+                <div class="flex flex-col gap-[12px] mr-[100px]">
+                    <h4 class="font-semibold text-[18px] mb-[28px]">Contato</h4>
+                    <h4>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</h4>
+                    <h4>(85) 3051-3411</h4>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-[35px] mb-[24px] text-lightt-grey">
+        <h4 class="flex justify-center items-center">@ 2022 Digital College</h4>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient': '#4200FF',
+                        'digital': '#C92071',
+                        'pattern-grey': '#F5F5F5',
+                        'warning': '#F6AA1C',
+                        'emphasis': '#D8E3F2',
+                        'off': '#E7FF86',
+                        'secondary': '#F9F8FE',
+                        'dark-grey2': '#474747',
+                        'light-grey': '#8F8F8F',
+                        'dark-grey': '#1F1F1F',
+                    },
+                    spacing: {
+                        '100': '100px',
+                        '300': '300px',
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

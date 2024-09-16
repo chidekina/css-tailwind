@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* .selcted::after {
+        content: 'x';
+        position: absolute;
+        top: 10.1rem;
+        left: 11.2rem;
+        width: 3rem;
+        height: 1.5px;
+        background: #333;
+        transition: all 0.45s;
+    }
+
+    .selcted:hover::after{
+        width: 100%;
+        left: 0;
+    } */
+
+    .collection:hover{
+        transform: scale(1.05);
+        transition-duration: 400ms;
+    }
+
+    .t-shirt:hover{
+        filter: invert(26%) sepia(66%) saturate(5885%) hue-rotate(318deg) brightness(82%) contrast(90%);
+    }
+    .jeans:hover{
+        filter: invert(26%) sepia(66%) saturate(5885%) hue-rotate(318deg) brightness(82%) contrast(90%);
+    }
+    .cap:hover{
+        filter: invert(26%) sepia(66%) saturate(5885%) hue-rotate(318deg) brightness(82%) contrast(90%);
+    }
+    .headphone:hover{
+        filter: invert(26%) sepia(66%) saturate(5885%) hue-rotate(318deg) brightness(82%) contrast(90%);
+    }
+    .sneak:hover{
+        filter: invert(26%) sepia(66%) saturate(5885%) hue-rotate(318deg) brightness(82%) contrast(90%);
+    }
+}
